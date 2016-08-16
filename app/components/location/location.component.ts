@@ -6,14 +6,14 @@ import {GoogleplaceDirective} from './../../../directives/googleplace.directive'
 
 
 @Component({
-    selector: 'dashboard',
-    templateUrl:"../app/components/dashboard/dashboard.html",
-
+    selector: 'location',
+    templateUrl: "../app/components/location/location.html",
+    directives:[ROUTER_DIRECTIVES,GoogleplaceDirective]
 })
 
 
 
-export class DashboardComponent implements OnInit{
+export class LocationComponent implements OnInit{
         
         constructor(private _router:Router){}
 
